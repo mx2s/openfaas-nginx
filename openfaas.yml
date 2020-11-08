@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  openfaas-nginx:
+    lang: dockerfile
+    handler: ./function
+    image: openfaas-nginx:0.1.0
